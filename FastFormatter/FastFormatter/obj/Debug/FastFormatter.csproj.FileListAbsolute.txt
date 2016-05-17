@@ -1,0 +1,1 @@
+c:\users\ktoloc\documents\visual studio 2013\Projects\FastFormatter\FastFormatter\bin\Debug\FastFormatter.exe.config
