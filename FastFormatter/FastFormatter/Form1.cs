@@ -12,9 +12,13 @@ namespace FastFormatter
 {
     public partial class Form1 : Form
     {
+    
+        /*MAIN INTERFACE*/
         public Form1()
         {
             InitializeComponent();
         }
+
+        
     }
 }
