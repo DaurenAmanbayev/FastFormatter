@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace FastFormatter
 {
+    //проработать вопрос универсальности применения регулярных выражений для обработки текста
     class RegexWorker
     { private RegexWorker() { }
         //Singletone pattern
@@ -110,7 +111,21 @@ namespace FastFormatter
             }
             return list;
         }
-        
+        //парсинг ссылок и отчет по ним
+        public string HtmlQuery(string input)
+        {
+            var regex = new Regex(@"href='(?<link>\S+)'>(?<text>\S+)</a>");           
+            StringBuilder builder=new StringBuilder();
+            // for(текущее_значение_m; условие; действие_при_каждой_итерации).
+            for (var m = regex.Match(input); m.Success; m = m.NextMatch())
+            {
+                // {0,-25} - значит что выделить 25 знакомест под вывод {0}. (-) - значит "прижаться" влево :)
+                builder.AppendFormat("ССЫЛКА: {0,-25} на: {1,-4} позиции с именем: {2}", m.Groups["link"],
+                                                                                      m.Groups["link"].Index,
+                                                                                      m.Groups["text"]);
+            }
+            return builder.ToString();
+        }
 
     }
 
