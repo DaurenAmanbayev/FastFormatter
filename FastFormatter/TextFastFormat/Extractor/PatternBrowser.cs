@@ -30,13 +30,8 @@ namespace TextFastFormat.Extractor
             patterns.Remove(name);
         }
         public Pattern GetPattern(string name)
-        {
-            if (patterns.ContainsKey(name))
-            {
-                return patterns[name];
-            }
-            else
-                return string.Empty;
+        {            
+                return patterns[name];           
         }
         public List<string> GetPatternNamesList()
         {

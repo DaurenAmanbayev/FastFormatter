@@ -13,7 +13,8 @@ namespace TextFastFormat.Editor
         //вариант парсинга путем регулярных выражений
         public static string[] ExtractLines(string input)
         {
-            return Regex.Split(input, "\r\n");
+            return input.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
+            //return Regex.Split(input, "\r\n");
         }
 
         //генерация текста делается вставка для каждой строки с обеих сторон
@@ -34,7 +35,6 @@ namespace TextFastFormat.Editor
             //"\r\n"
             return string.Join(separator, lines);
         }
-
         public static string Replace(string input, string oldString, string newString)
         {
             return input.Replace(oldString, newString);
@@ -49,32 +49,34 @@ namespace TextFastFormat.Editor
             }
             return input;
         }
-        public static string TrimByLine(string input, string chars)
+        public static string TrimByLine(string input, string chars, string separator)
         {
             string[] lines = ExtractLines(input);
-            StringBuilder builder = new StringBuilder();
+            List<string> content = new List<string>();
+         
             foreach (var line in lines)
             {
-                builder.AppendLine(TrimChars(line, chars));
+                content.Add(TrimChars(line, chars));
             }
-            return builder.ToString();
+            return GenerateContent(content, separator);
         }
-        public static string FormatByLine(string input, string format)
+        public static string FormatByLine(string input, string format, string separator)
         {
             string[] lines = ExtractLines(input);
-            StringBuilder builder = new StringBuilder();
-            foreach (var line in lines)
-            {
-                builder.AppendLine(string.Format(format, line));
-            }
-            return builder.ToString();
-        }
+            
+            List<string> content = new List<string>();
 
+            foreach (var line in lines)
+            {
+                content.Add(string.Format(format, line));
+            }
+            return GenerateContent(content, separator);
+        }
         public static string TrimChars(string input, string chars)
         {
             foreach (char ch in chars)
             {
-                input.Trim(ch);
+               input=input.Trim(ch);
             }
             return input;
         }       

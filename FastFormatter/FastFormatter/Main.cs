@@ -299,7 +299,7 @@ namespace FastFormatter
                 
                 var input = richTextBoxContent.Text;
 
-                richTextBoxContent.Text = TextWorker.TrimByLine(input, pattern);
+                richTextBoxContent.Text = TextWorker.TrimByLine(input, pattern, GetSeparator());
             }
             else
             {
@@ -311,9 +311,9 @@ namespace FastFormatter
             if (!textBoxPattern.Text.Equals(""))
             {
                 var pattern = textBoxPattern.Text;
-                var replace = textBoxReplace.Text;
+                var input = richTextBoxContent.Text;
              
-                richTextBoxContent.Text = TextWorker.FormatByLine(input, pattern);
+                richTextBoxContent.Text = TextWorker.FormatByLine(input, pattern, GetSeparator());
             }
             else
             {
