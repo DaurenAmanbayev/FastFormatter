@@ -62,7 +62,9 @@
             this.textBoxBracketStart = new System.Windows.Forms.TextBox();
             this.textBoxBracketEnd = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBoxPattern = new System.Windows.Forms.TextBox();
+            this.textBoxReplace = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioButtonBrackets = new System.Windows.Forms.RadioButton();
             this.radioButtonReplace = new System.Windows.Forms.RadioButton();
@@ -73,8 +75,6 @@
             this.radioButtonEditorCRLF = new System.Windows.Forms.RadioButton();
             this.radioButtonEditorLF = new System.Windows.Forms.RadioButton();
             this.buttonEdit = new System.Windows.Forms.Button();
-            this.textBoxReplace = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.menuStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -428,6 +428,15 @@
             this.flowLayoutPanel5.Size = new System.Drawing.Size(216, 79);
             this.flowLayoutPanel5.TabIndex = 1;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Pattern";
+            // 
             // textBoxPattern
             // 
             this.textBoxPattern.Location = new System.Drawing.Point(3, 16);
@@ -435,6 +444,14 @@
             this.textBoxPattern.ReadOnly = true;
             this.textBoxPattern.Size = new System.Drawing.Size(179, 20);
             this.textBoxPattern.TabIndex = 1;
+            // 
+            // textBoxReplace
+            // 
+            this.textBoxReplace.Location = new System.Drawing.Point(3, 42);
+            this.textBoxReplace.Name = "textBoxReplace";
+            this.textBoxReplace.ReadOnly = true;
+            this.textBoxReplace.Size = new System.Drawing.Size(179, 20);
+            this.textBoxReplace.TabIndex = 3;
             // 
             // flowLayoutPanel6
             // 
@@ -547,23 +564,6 @@
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
-            // textBoxReplace
-            // 
-            this.textBoxReplace.Location = new System.Drawing.Point(3, 42);
-            this.textBoxReplace.Name = "textBoxReplace";
-            this.textBoxReplace.ReadOnly = true;
-            this.textBoxReplace.Size = new System.Drawing.Size(179, 20);
-            this.textBoxReplace.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Pattern";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -578,7 +578,7 @@
             this.MainMenuStrip = this.menuStripMain;
             this.MaximizeBox = false;
             this.Name = "Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Text Fast Format Tool";
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
