@@ -21,10 +21,15 @@ namespace FastFormatter
             InitializeComponent();
             this.browser = browser;
             this.filename = browser.Location;
+            LoadBrowser();
         }
 
         private void LoadBrowser()
-        {            
+        {
+            if (listViewPatterns.Items.Count > 0)
+            {
+                listViewPatterns.Items.Clear();
+            }
             int id = 1;
             foreach (var pattern in browser.GetPatternList())
             {
@@ -54,17 +59,11 @@ namespace FastFormatter
             if (result == DialogResult.OK)
             {
                 var container = frm.Container;                
-                browser.AddPattern(container);
-                listViewPatterns.Items.Clear();
-                LoadBrowser();
-                Changed();
+                browser.AddPattern(container);               
+                LoadBrowser();              
             }
 
-        }
-        private void Changed()
-        {
-            this.DialogResult=DialogResult.OK;
-        }
+        }     
 
         private void deletePatternToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -73,7 +72,7 @@ namespace FastFormatter
                 var item = listViewPatterns.SelectedItems[0];
                 browser.RemovePattern(item.Name);
                 listViewPatterns.Items.Remove(item);
-                Changed();
+              
             }
         }
         #endregion

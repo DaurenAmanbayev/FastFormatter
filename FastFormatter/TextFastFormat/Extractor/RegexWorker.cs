@@ -75,6 +75,10 @@ namespace TextFastFormat.Extractor
                 list.Add(info);
             }
             return list;
-        }        
+        }
+        public static string Replace(string input, string pattern, string replace)
+        {
+           return Regex.Replace(input, pattern, replace);
+        }
     }
 }

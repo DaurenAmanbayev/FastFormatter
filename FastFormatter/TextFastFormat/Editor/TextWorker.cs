@@ -37,7 +37,8 @@ namespace TextFastFormat.Editor
         }
         public static string Replace(string input, string oldString, string newString)
         {
-            return input.Replace(oldString, newString);
+            return RegexWorker.Singletone.ReplacePattern(input, oldString, newString);
+                //input.Replace(oldString, newString);
         }
         public static string Remove(string input, string removePattern)
         {

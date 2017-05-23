@@ -131,11 +131,8 @@ namespace FastFormatter
         private void managePatternsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PatternsManager frm = new PatternsManager(browser);
-            var result = frm.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                LoadBrowser();
-            }
+            frm.ShowDialog();
+            LoadBrowser();           
             
         }
         #endregion
