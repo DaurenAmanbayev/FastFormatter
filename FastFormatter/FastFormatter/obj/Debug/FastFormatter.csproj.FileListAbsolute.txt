@@ -1,1 +1,14 @@
 c:\users\ktoloc\documents\visual studio 2013\Projects\FastFormatter\FastFormatter\bin\Debug\FastFormatter.exe.config
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\bin\Debug\FastFormatter.exe.config
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\bin\Debug\FastFormatter.exe
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\bin\Debug\FastFormatter.pdb
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.csprojResolveAssemblyReference.cache
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.Main.resources
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.Properties.Resources.resources
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.csproj.GenerateResource.Cache
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.exe
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.pdb
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.PatternFrm.resources
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\obj\Debug\FastFormatter.PatternsManager.resources
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\bin\Debug\TextFastFormat.dll
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\FastFormatter\bin\Debug\TextFastFormat.pdb

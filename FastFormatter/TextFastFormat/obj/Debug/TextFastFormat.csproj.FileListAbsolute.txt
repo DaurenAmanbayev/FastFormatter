@@ -1,0 +1,5 @@
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\TextFastFormat\bin\Debug\TextFastFormat.dll
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\TextFastFormat\bin\Debug\TextFastFormat.pdb
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\TextFastFormat\obj\Debug\TextFastFormat.csprojResolveAssemblyReference.cache
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\TextFastFormat\obj\Debug\TextFastFormat.dll
+C:\Users\ktoloc\Documents\GitHub\FastFormatter\FastFormatter\TextFastFormat\obj\Debug\TextFastFormat.pdb
