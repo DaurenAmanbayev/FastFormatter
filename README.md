@@ -13,3 +13,4 @@ Functions
 * Generate brackets to content line by line
 * Trim content line by line
 * Format content line by line 
+* Save patterns to re-usage
